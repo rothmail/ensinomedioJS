@@ -1,9 +1,9 @@
 //ESCRITA
  
 // function quemEuSou(){
-// const nome = "Pedro"
-// const idade = 16
-// const cidade = "Esteio"
+// const nome = "Amanda"
+// const idade = 15
+// const cidade = "São Leoplodo"
 // const profissao = "Estudante"
 
 // console.log(`Eu sou ${nome}, tenho ${idade} anos, moro em ${cidade} e sou ${profissao}`)
