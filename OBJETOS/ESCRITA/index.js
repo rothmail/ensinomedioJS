@@ -78,25 +78,28 @@ console.log(`Eu sou ${pessoa.nome}, mas pode me chamar de: ${pessoa.apelidos[0]}
 
 // 2.
 const listaDeTarefas = {
-    nome: 'Amanda',
+    nome: "João",
     tarefas: [
-        { descricao: 'Estudar para a prova', concluida: false, prioridade: 'alta' },
-        { descricao: 'Limpar o quarto', concluida: false, prioridade: 'média' }
+        { descricao: "Estudar para a prova", concluida: true, prioridade: "alta" },
+        { descricao: "Limpar o quarto", concluida: false, prioridade: "média" },
+        {descricao: "ler o livro", concluida: false, prioridade: "baixa"}
     ]
 };
 
-
-
-listaDeTarefas.novasTarefas = 'guardar roupa'
-
 // 3.
-const usuario = {
-    nome: rl.question('Seu nome:   '),
-    idade: rl.questionInt('Sua idade:   '),
-    profissao: rl.question('Sua profissão:  ')
-}
-console.log(`Nome: ${usuario.nome}\nIdade: ${usuario.idade}\nProfissão: ${usuario.profissao}`)
+function info(){
+    let nome = prompt('qual seu nome?')
+    let idade = prompt('qual sua idade?')
+    let profissao = prompt('qual sua profissão?')
 
+ let pessoa = {
+    nomePessoa: nome,
+    idadePessoa: idade,
+    profissaoPessoa: profissao
+};
+console.log('nome:', (pessoa.nomePessoa), 'idade:', (pessoa.idadePessoa), 'profissão:', (pessoa.profissaoPessoa))
+}
+info()
 // 4.
 //a) Crie uma variável de escopo global que guarde um `array` vazio chamada `carrinho`
 //    
@@ -104,19 +107,19 @@ console.log(`Nome: ${usuario.nome}\nIdade: ${usuario.idade}\nProfissão: ${usuar
 //
 //c) Adicione cada uma das frutas no array `carrinho`
 
-carrinho = [];
-const sacola = {
-    fruta01: {
-        nome: 'maçã',
-        disponibilidade: true
-    },
-    fruta02: {
-        nome: 'uva',
-        disponibilidade: true
-    },
-    fruta03: {
-        nome: 'morango',
-        disponibilidade: true
-    }
+let carrinho = []
+let fruta1 = {
+    nome: "Maçã",
+    disponibilidade: true
 }
-console.log(carrinho.push(sacola.fruta01));
+let fruta2 = {
+    nome: "Banana",
+    disponibilidade: true
+}
+let fruta3 = {
+    nome: "Laranja",
+    disponibilidade: true
+}
+carrinho.push(fruta1)
+carrinho.push(fruta2)
+carrinho.push(fruta3)
