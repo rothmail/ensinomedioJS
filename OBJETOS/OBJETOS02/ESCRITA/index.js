@@ -3,7 +3,7 @@
 
 - **Descrição:** Crie um objeto `aluno` com as propriedades `nome`, `idade`, e `notas` (um array de números). Em seguida, crie uma função `calcularMedia` que recebe o objeto `aluno` e retorna a média das notas.
 */
-/*
+
 const aluno = {
     nome: 'amanda',
     idade: 15,
@@ -27,7 +27,7 @@ console.log(calcularMedia(aluno));
 */
 
 const rl = require('readline-sync')
-/*
+
 let carrinho = {
     itens: [
         { nome: 'morango', preco: 5 },
@@ -73,7 +73,7 @@ console.log(carrinho);
 
 - **Descrição:** Crie um objeto `livroDigital` com as propriedades `titulo`, `autor`, e `paginasLidas`. Crie uma função `lerMaisPaginas` que recebe o objeto `livroDigital` e um número de páginas a serem lidas, e **incrementa** a propriedade `paginasLidas`.
 */
-/*
+
 const livroDigital = {
     titulo: 'pequeno príncipe',
     autor: 'amanda',
@@ -89,7 +89,7 @@ function lerMaisPag() {
     console.log(livroDigital.pagLidas);
 };
 lerMaisPag()
-*/
+
 /*
 ### **4. Biblioteca Digital**
 
